@@ -1,0 +1,98 @@
+{% extends "layouts/base.html" %} {% load static %} {% block title %} Ayrid
+{% endblock title %} {% block Body %}
+<!-- Breadcrumb section -->
+	<div class="site-breadcrumb">
+		<div class="container">
+			<span>Contact</span>
+		</div>
+	</div>
+	<!-- Breadcrumb section end -->
+	<section class="contact-page spad pt-0">
+		<div class="container">
+			
+			<div class="contact-form spad pb-0">
+				<div class="section-title text-center">
+					<h3>GET IN TOUCH</h3>
+					<p>Contact us for best deals and offer</p>
+				</div>
+				<form class="comment-form --contact">
+					{% csrf_token %}
+					{{ form.non_field_errors }}
+					{{ form.source.errors }}
+					{{ form.source }}
+				  
+					<div class="row">
+						<div class="col-lg-4">          {{ form.firstName.errors }}
+							<input type="text"
+       name="{{ form.firstName.name }}"
+       id="{{ form.firstName.id_for_label }}"
+       {% if form.firstName.value != None %}value="{{ form.firstName.value|stringformat:'s' }}"{% endif %}
+       maxlength="{{ form.firstName.field.max_length }}"
+       {% if form.firstName.field.required %}required{% endif %} placeholder="Your First Name">
+	   <!-- <input type="text" placeholder="Your F Name"> -->
+	</div>
+	<div class="col-lg-4">	{{ form.lastName.errors }}
+
+		<input type="text"
+	name="{{ form.lastName.name }}"
+	id="{{ form.lastName.id_for_label }}"
+	{% if form.lastName.value != None %}value="{{ form.lastName.value|stringformat:'s' }}"{% endif %}
+	maxlength="{{ form.lastName.field.max_length }}"
+	{% if form.lastName.field.required %}required{% endif %} placeholder="Your Last Name">
+	<!-- <input type="text" placeholder="Your L Name"> -->
+</div>
+<div class="col-lg-4">
+	{{ form.email.errors }}
+	<input type="text"
+	name="{{ form.email.name }}"
+	id="{{ form.email.id_for_label }}"
+	{% if form.email.value != None %}value="{{ form.email.value|stringformat:'s' }}"{% endif %}
+	maxlength="{{ form.email.field.max_length }}"
+	{% if form.email.field.required %}required{% endif %} placeholder="Your Email">
+	<!-- <input type="text" placeholder="Your Email"> -->
+</div>
+<div class="col-lg-12">
+	{{ form.message.errors }}
+	<input type="text"
+	name="{{ form.message.name }}"
+	id="{{ form.message.id_for_label }}"
+	{% if form.message.value != None %}value="{{ form.message.value|stringformat:'s' }}"{% endif %}
+	maxlength="{{ form.message.field.max_length }}"
+	{% if form.message.field.required %}required{% endif %} placeholder="Your Message">
+
+							<!-- <textarea placeholder="Message"></textarea> -->
+							<div class="text-center">
+								<button class="site-btn">SUBMIT</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="map-section">
+				<div class="contact-info-warp">
+					<div class="contact-info">
+						<h4>Address</h4>
+						<p>Villa 42 A Elgharby street Helwan Cairo Egypt</p>
+					</div>
+					<div class="contact-info">
+						<h4>Phone</h4>
+						<p>(+02) 01090104083</p>
+					</div>
+					<div class="contact-info">
+						<h4>Email</h4>
+						<p>contact_us@ayrid.org</p>
+					</div>
+					<div class="contact-info">
+						<h4>Working time</h4>
+						<p>Sunday - Thursday: 08 AM - 04 PM</p>
+					</div>
+				</div>
+				<!-- Google map -->
+				<div class="map" id="map-canvas"></div>
+			</div>
+		</div>
+	</section>
+</form>
+{% endblock Body %}
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+	<script src="js/map.js"></script>

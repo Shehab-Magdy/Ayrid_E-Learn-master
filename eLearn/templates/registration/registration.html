@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+{% load static %} 
+{% block title %}
+    Registration
+{% endblock title %}
+{% block Body %}
+    <h1>Registration</h1>
+    <div class="container">
+        <form method="Post" action="{% url 'eLearn:elearn.newRegistration' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            Email: <input type="email" name="email" required> <br>
+            Password: <input type="password" name="password" required> <br>
+            Phone No.: <input type="tel" name="phone" required> <br>
+            Full Name: <input type="text" name="fullname" required="True" required> <br>
+            Birth Date: <input type="date" name="birthdate" pattern="\d{4}-\d{2}-\d{2}" required> <br>
+            Profile photo: <input type="file" name="profileimage" accept="image/png, image/jpeg" required> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock Body %}
+

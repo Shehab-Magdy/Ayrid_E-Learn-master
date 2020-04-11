@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% load static %} 
+{% block title %}
+    Login
+{% endblock title %}
+{% block Body %}
+<h1>Login</h1>
+<div class="container">
+    <form method="Post" action="{% url 'eLearn:elearn.login' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        Email: <input type="email" name="email" required> 
+        Password: <input type="password" name="password" required> 
+        <input type="submit" value="Login">
+    </form>
+</div>
+{% endblock Body %}

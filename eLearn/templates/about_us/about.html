@@ -1,0 +1,338 @@
+{% extends "layouts/base.html" %} {% load static %} {% block title %} Ayrid {% endblock title %} {% block Body %}
+
+       <!-- About section -->
+  <section class="about-section spad pt-0">
+    <div class="container">
+      <div class="section-title text-center">
+        <h1>WELCOME TO Ayrid</h1>
+        <p>Building creative minds for a sustainable future</p>
+      </div>
+        <div class="row">
+         <div class="col-lg-6 about-text">
+          <h5>About us</h5>
+          <blockquote cite="http://www.worldwildlife.org/who/index.html"> As global citizens, we have a responsibility to our planet and to future generations, this is what we believe. We are a group of professionals from Ph.D. holders to undergraduate students in different fields who want to change their community and believe that they truly can. We want to give the upcoming generation a better future and believe the path to this is very feasible through our students. Our association is aimed at empowering the youth by providing them with the values and skills that are required to change their mindsets and turn them into critical and analytical thinkers who are ambitious and capable of changing their communities. In order to achieve this goal, we provide programs that are based on the STEM educational system, where we teach them research skills and creative thinking. In addition, we also provide them with lectures and training in multiple subjects including but not limited to entrepreneurship, personal branding, and self-learning. Our ultimate goal is to build a better future where there are much less problems and more places & opportunities for everyone; Not only are we proud of what we have achieved but we also look forward to the infinite thing we can accomplish</blockquote>
+          <h5 class="pt-4">Empowerment</h5>
+          <p>We seek to empower the youth’s mindset and provide them with the required skills to achieve their targets and give them the right amount of motivation which they need. We provide with countless resources for them to turn their idea into an actual project that helps society and build a future for them.</p>
+          <ul class="about-list">
+            <li><i class="fa fa-check-square-o"></i> Entrepreneurship.</li>
+            <li><i class="fa fa-check-square-o"></i> Design thinking.</li>
+            <li><i class="fa fa-check-square-o"></i> 21st-century skills.</li>
+            <li><i class="fa fa-check-square-o"></i> “Current and Upcoming World” A recurrent awareness lecture: a lecture that we hold frequently which intended to motivate the people and aware them about the current and upcoming world’s challenges as well as shape.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 pt-5 pt-lg-0">
+          <img src="{% static "elearn/dist/img/Logo-AYRID-web.png" %}" alt="1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial section  -->
+  <section class="testimonial-section spad">
+    <div class="container">
+      <div class="testimonial-slider owl-carousel">
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/Heba.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Consultant of the development of education technology & steam education
+                  Founder and CEO of scientists of tomorrow initiative
+             ”</p>
+              <h5>DR.Heba Mahmoud</h5>
+              <span>chief executive officer</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/zakia.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Head Dept. of Veterinary Hygiene and Management , Faculty of Veterinary Medicine, Cairo University. ”</p>
+              <h5>DR. Zakia Ahmed, Ph.D</h5>
+              <span>public relations manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/souad.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Professor & Consultant at Biological Control Department. ”</p>
+              <h5>DR.Souad Shairra, Ph.D</h5>
+              <span>public relations manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/Gehan.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Journalist and Editor at Al-Ahram newspaper. ”</p>
+              <h5>Miss.Gehan Sha’rawy</h5>
+              <span>Head of Media team</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/smah.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Professor of Virology and Immunology, Cancer Biology Department, National Cancer Institute, Cairo University.. ”</p>
+              <h5>DR.Samah Loutfy, Ph.D</h5>
+              <span>Director of the Project Management Office</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/nahla.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Head of Fruit Breeding Department, Horticulture Research Institute, Agriculture
+                    Research Center, Cairo University . ”</p>
+              <h5>DR.Nahla Awad, Ph.D</h5>
+              <span>Director of the Project Management Office</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/mohamed .png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Assistant Researcher, Laser and Additive Manufacturing Lab., Central Metallurgical
+                   Research and Development Institute (CMRDI) . ”</p>
+              <h5>Mohamed Abdel-latif, M.Sc </h5>
+              <span>Research and Development Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/abeer.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Assistant Professor of Pediatrics, Pediatrics Department, Medical Research Centre of
+                   Excellence (MRCE), National Research Centre . ”</p>
+              <h5> Abeer sliem, MD </h5>
+              <span>Research and Development Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/bahaa.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Research Assistant, Nano Integrated Systems Center (NISC) ,Nile University . ”</p>
+              <h5> Bahaa Mohamed, M.Sc </h5>
+              <span>Research and Development Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/moahmed adel.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Egyptian national team instructor for F1 computations . ”</p>
+              <h5> Mohamed Adel, M.Sc </h5>
+              <span>Head of activities organizing committee</span>
+            </div>
+          </div>
+        </div>
+        <div class="ts-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="ts-author-pic set-bg" data-setbg="{% static 'elearn/dist/img/badr.png' %}"></div>
+            </div>
+            <div class="col-md-9 ts-text">
+              <p>“ Content manager at Nafham CO founder at ETS ACDEMY . ”</p>
+              <h5> Badr Alaa </h5>
+              <span>Manager at the training committee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+  <!-- Testimonial section end -->
+  <!-- Team section  -->
+  <section class="team-section spad">
+    <div class="container">
+      <div class="section-title text-center">
+        <h3>People to remember</h3>
+        <p>After years of work with ambitious driven young people, we are really proud of what each one has achieved. We truly wish we could share every single one of them with you. However, this would render this portfolio hundreds of pages long. Which is why we decided to randomly pick a few students amongst our countless high achieving students in order to share them with you</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/youssef.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Youssef El-Badri</h5>
+            <div class="card" data-city="buda">
+            <p>Youssef is one of our best students, we have trained him in 2013Youssef’s project “GOEBL” was a very successful<span class="dots">...</span> <span class="more" style="display: none;"> trial to improve the efficiency of the thermal cell where he could make it reaches up to 90%. Youssef is now a freshman in Nile University, Egypt where he studies engineering in a full scholarship which we helped him obtain</span></p>
+            <button onclick="readMore('buda')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/olivia adel.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Olivia Adel</h5>
+            <div class="card" data-city="trin">
+            <p>Olivia is a brilliant student who we had the honor to train. Her project was about HCV where she has competed<span class="dots">...</span> <span class="more" style="display: none;"> with it in many fairs  conferences and got an internship to do her project’s experiments in the National Cancer Institute, Egypt. Olivia has taken a full scholarship with our assistance to study at the British University in Egypt. In addition, she was honored for her efforts from the president Abd El-Fatah El-Sissi</span></p>
+              <button onclick="readMore('trin')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/mohamed mahmoud.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Mohamed Mahmoud</h5>
+            <div class="card" data-city="mohamed">
+            <p>Mohamed is a great example of the persistent person, we have trained him while he was in grade 7, then he kept<span class="dots">...</span> <span class="more" style="display: none;"> improving his skills and working on his project, which was extremely challenging for someone in his age, until he could set up the first HIV research line in Egypt while he was in grade 12. He is also an international awardee and he passed his experience to the undergraduates & school students as he trained many of them on “how to be a
+            researcher in the medical science field</span></p>
+            <button onclick="readMore('mohamed')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/sara.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Sara Saad</h5>
+            <div class="card" data-city="sara">
+            <p>Sara is a very ambitious one, her work was related
+                to clean and sustainable energy. She awarded the Gold medal <span class="dots">...</span> <span class="more" style="display: none;">in WICC, Korea. Sara took a full scholarship to McMaster University, Canada, where she studies engineering currently</span></p>
+            <button onclick="readMore('sara')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/yehia.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Yehia Adela</h5>
+            <div class="card" data-city="Yehia">
+            <p>Yehia is the best example for the hardworking student, he is a Syrian citizen lives in Egypt. He joined us in<span class="dots">...</span> <span class="more" style="display: none;"> 2016 then he developed his project where he investigated the effect of the Nano honey on the cancer cells in vivo, he got a gold medal on Genius Olympiad in 2017 and now he is a student in Dentary school, Badr University, Egypt.</span></p>
+            <button onclick="readMore('Yehia')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/mohamed ashraf.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Mohamed Ashraf</h5>
+            <div class="card" data-city="ashraf">
+            <p>Mohamed is a successful student, after we trained him he competed with many projects related to <span class="dots">...</span> <span class="more" style="display: none;">Artificial Intelligence in different science fairs; Just like most of our students he is international awardee. Now he is a student at Nile University,
+            Egypt in a full scholarship and he launched his first startup “Wave Technologies”.
+            </span></p>
+            <button onclick="readMore('ashraf')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="member">
+            <div class="member-pic set-bg" data-setbg="{% static 'elearn/dist/img/Hussin.jpg' %}">
+              <div class="member-social">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+              </div>
+            </div>
+            <h5>Hussien Gaher</h5>
+            <div class="card" data-city="Hussien">
+            <p>Hussien is a smart student. We trained him and helped him to turn his idea, which was about a new<span class="dots">...</span> <span class="more" style="display: none;">, efficient & eco-friendly photovoltaic system, into an applicable project and he is now trying to establish his first startup and begin to sell his product while he studies engineering at Nile University, Egypt in a full scholarship.</span> </p>
+            <button onclick="readMore('Hussien')" class="myBtn">Read more</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    {% csrf_token %} 
+    
+   
+    <!-- <label for="fullName">Full Name:</label>
+    <input type="text" name="FullName" id="fullName">
+    <label for="active">Active</label>
+    <input type="checkbox" name="active" id="active"><br>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+    <img src="https://via.placeholder.com/150/0f4c75/d89cf6?Text=Aloooooooo" alt="Member Image" class="img"  id="1st_slide" width="150px" height="150px"/><br>
+    <label for="memberImg">Member Image</label>
+    <input type="file" name="memberImg" id="memberImg" accept="image/*" onchange="readURL(this,'1st_slide');"><br>
+    <input type="submit" value="Submit">
+</form>
+<hr>
+        <div class="row"> -->
+        {% for member in members %}
+        <!-- Testimonial section  -->
+  
+
+
+  
+
+        <!-- <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="{{ member.pic.url }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{member.FullName}}</h4>
+              <p class="card-text">{{member.description}}</p>
+              <p class="card-text"><small class="text-muted">Active status is: {{member.status}}</small></p>
+            </div>
+          </div>
+        </div> -->
+        {% endfor %}
+<!--       </div>
+ -->{% endblock Body %}

@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %} {% load static %} {% block title %} Edit Members {% endblock title %} {% block Body %}
+<h1>Admin Members</h1>
+
+<form action="{% url 'eLearn:elearn.members' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %} 
+    <label for="fullName">Full Name:</label>
+    <input type="text" name="FullName" id="fullName">
+    <label for="active">Active</label>
+    <input type="checkbox" name="active" id="active"><br>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+    <img src="https://via.placeholder.com/150/0f4c75/d89cf6?Text=Aloooooooo" alt="Member Image" class="img"  id="1st_slide" width="150px" height="150px"/><br>
+    <label for="memberImg">Member Image</label>
+    <input type="file" name="memberImg" id="memberImg" accept="image/*" onchange="readURL(this,'1st_slide');"><br>
+    <input type="submit" value="Submit">
+</form>
+<hr>
+        <div class="row">
+        {% for member in members %}
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="{{ member.pic.url }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{member.FullName}}</h4>
+              <p class="card-text">{{member.description}}</p>
+              <p class="card-text"><small class="text-muted">Active status is: {{member.status}}</small></p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+{% endblock Body %}
